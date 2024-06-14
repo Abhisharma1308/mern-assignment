@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+display: grid;
+  grid-template-rows: 100px 600px 140px;
+  grid-template-columns:repeat(4,1fr);
+    }
+    nav,footer{
+background-color: blue;
+grid-column-start: 1;
+grid-column-end: 5;
+
+    }
+    aside{
+background-color: aqua;
+    }
+    section{
+background-color: blueviolet;
+height: 100%;
+    }
+    main{
+background-color: chocolate;
+grid-column-start: 2;
+grid-column-end: 5;
+padding: 40px;
+    }
+    footer{
+background-color: yellow;
+    }
+</style>
+<body>
+    <nav>Navbar</nav>
+    <aside>Aside</aside>
+    <main>
+        <section>Section</section>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>
